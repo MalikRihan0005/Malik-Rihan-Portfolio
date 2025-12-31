@@ -1,16 +1,16 @@
 const skills = [
-  { name: "React", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 85 },
+  { name: "C Language", level: 85 },
   { name: "Python", level: 80 },
-  { name: "PostgreSQL", level: 85 },
-  { name: "AWS", level: 75 },
+  { name: "C++", level: 75 },
+  { name: "Java", level: 70 },
+  { name: "JavaScript", level: 60 },
+  { name: "DSA", level: 65 },
 ];
 
 const technologies = [
-  "JavaScript", "TypeScript", "React", "Next.js", "Vue.js", "Node.js",
-  "Python", "Django", "PostgreSQL", "MongoDB", "Redis", "Docker",
-  "AWS", "GCP", "Git", "GraphQL", "REST APIs", "Tailwind CSS"
+  "C", "C++", "Python", "Java", "JavaScript", "HTML", "CSS",
+  "Data Structures", "Algorithms", "IoT", "Git", "GitHub",
+  "Web Development", "Machine Learning", "Cloud Computing", "DevOps"
 ];
 
 const SkillsSection = () => {

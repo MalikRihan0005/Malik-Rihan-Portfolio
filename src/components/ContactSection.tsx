@@ -41,17 +41,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground">Email</div>
-                    <div className="font-medium">hello@example.com</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4 p-4 glass rounded-xl">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground">Phone</div>
-                    <div className="font-medium">+1 (555) 123-4567</div>
+                    <div className="font-medium">malikrihan@example.com</div>
                   </div>
                 </div>
                 
@@ -61,7 +51,17 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground">Location</div>
-                    <div className="font-medium">San Francisco, CA</div>
+                    <div className="font-medium">Davangere, Karnataka</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4 p-4 glass rounded-xl">
+                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-muted-foreground">Seeking</div>
+                    <div className="font-medium">Internship (Remote/Bangalore)</div>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@ const ContactSection = () => {
                 <div className="text-sm text-muted-foreground mb-4">Follow me</div>
                 <div className="flex items-center gap-3">
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://www.linkedin.com/in/malik-rihan-926a28262" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 glass rounded-xl hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group"
@@ -79,20 +79,12 @@ const ContactSection = () => {
                     <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
                   </a>
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/malikrihan" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 glass rounded-xl hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group"
                   >
                     <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-                  </a>
-                  <a 
-                    href="https://twitter.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-3 glass rounded-xl hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group"
-                  >
-                    <Twitter className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
                   </a>
                 </div>
               </div>
