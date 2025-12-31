@@ -3,26 +3,10 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates, drag-and-drop functionality, and team workspaces.",
-    tags: ["Next.js", "TypeScript", "Prisma", "WebSocket"],
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "AI Content Generator",
-    description: "AI-powered content creation platform using GPT-4 for generating marketing copy, blog posts, and social media content.",
-    tags: ["Python", "FastAPI", "OpenAI", "Redis"],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+    title: "Camera-Based Security System",
+    description: "An innovative IoT-based security system designed for the safety and protection of women and physically challenged individuals. Features real-time monitoring and smart alerts for vulnerable situations.",
+    tags: ["IoT", "Python", "Computer Vision", "Sensors"],
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
     liveUrl: "#",
     githubUrl: "#",
   },

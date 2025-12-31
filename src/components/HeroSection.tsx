@@ -22,13 +22,13 @@ const HeroSection = () => {
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-up opacity-0 animation-delay-200">
             Hi, I'm{" "}
-            <span className="text-gradient">Your Name</span>
+            <span className="text-gradient">Malik Rihan</span>
           </h1>
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-up opacity-0 animation-delay-400">
-            A passionate <span className="text-foreground font-medium">Full Stack Developer</span> crafting 
-            beautiful digital experiences with modern technologies.
+            A passionate <span className="text-foreground font-medium">Software Engineer</span> & ISE Student 
+            exploring Web Dev, ML, Cloud & DevOps.
           </p>
           
           {/* CTA Buttons */}
@@ -44,7 +44,7 @@ const HeroSection = () => {
           {/* Social links */}
           <div className="flex items-center justify-center gap-4 animate-fade-up opacity-0 animation-delay-600">
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/malik-rihan-926a28262" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 glass rounded-xl hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group"
@@ -52,7 +52,7 @@ const HeroSection = () => {
               <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a 
-              href="https://github.com" 
+              href="https://github.com/malikrihan" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 glass rounded-xl hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group"
@@ -60,7 +60,7 @@ const HeroSection = () => {
               <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a 
-              href="mailto:hello@example.com"
+              href="mailto:malikrihan@example.com"
               className="p-3 glass rounded-xl hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group"
             >
               <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />

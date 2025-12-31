@@ -34,12 +34,12 @@ const AboutSection = () => {
           <div className="text-center mb-16">
             <span className="text-primary font-mono text-sm tracking-wider uppercase">About Me</span>
             <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-              Passionate about building{" "}
-              <span className="text-gradient">impactful products</span>
+              Passionate about solving{" "}
+              <span className="text-gradient">real-world problems</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              With over 5 years of experience in software development, I specialize in creating 
-              robust web applications that solve real-world problems and deliver exceptional user experiences.
+              I'm a second-year Information Science Engineering student at BIET Davangere, 
+              passionate about building web apps, learning data structures, and exploring Python-based technologies.
             </p>
           </div>
           
@@ -63,20 +63,20 @@ const AboutSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 p-8 glass rounded-2xl">
             <div className="text-center">
-              <div className="text-4xl font-bold text-gradient mb-2">5+</div>
-              <div className="text-muted-foreground text-sm">Years Experience</div>
+              <div className="text-4xl font-bold text-gradient mb-2">2nd</div>
+              <div className="text-muted-foreground text-sm">Year ISE Student</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-gradient mb-2">50+</div>
-              <div className="text-muted-foreground text-sm">Projects Completed</div>
+              <div className="text-4xl font-bold text-gradient mb-2">4+</div>
+              <div className="text-muted-foreground text-sm">Languages Known</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-gradient mb-2">30+</div>
-              <div className="text-muted-foreground text-sm">Happy Clients</div>
+              <div className="text-4xl font-bold text-gradient mb-2">IoT</div>
+              <div className="text-muted-foreground text-sm">Project Domain</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-gradient mb-2">99%</div>
-              <div className="text-muted-foreground text-sm">Client Satisfaction</div>
+              <div className="text-4xl font-bold text-gradient mb-2">Open</div>
+              <div className="text-muted-foreground text-sm">For Internships</div>
             </div>
           </div>
         </div>
