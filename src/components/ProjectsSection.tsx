@@ -1,18 +1,22 @@
+import { useState } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ProjectDetailModal from "./ProjectDetailModal";
 
 const projects = [
   {
-    title: "Camera-Based Security System",
-    description: "An innovative IoT-based security system designed for the safety and protection of women and physically challenged individuals. Features real-time monitoring and smart alerts for vulnerable situations.",
-    tags: ["IoT", "Python", "Computer Vision", "Sensors"],
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+    id: "camera-security",
+    title: "IoT-Based Camera Security System",
+    description: "Engineered an innovative camera-based security system for women and physically challenged individuals, integrating IoT sensors with real-time monitoring, smart surveillance algorithms for threat detection, and automated alert systems.",
+    tags: ["IoT", "Arduino", "ESP32-CAM", "Python", "Sensors", "PCB Design"],
+    image: "/images/project-1.jpg",
+    hasDetails: true,
   },
 ];
 
 const ProjectsSection = () => {
+  const [selectedProject, setSelectedProject] = useState<string | null>(null);
+
   return (
     <section id="projects" className="py-24 bg-background relative">
       <div className="absolute inset-0 bg-glow opacity-30" />
@@ -37,7 +41,8 @@ const ProjectsSection = () => {
             {projects.map((project) => (
               <div 
                 key={project.title}
-                className="group glass rounded-2xl overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-2"
+                className="group glass rounded-2xl overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-2 cursor-pointer"
+                onClick={() => project.hasDetails && setSelectedProject(project.id)}
               >
                 {/* Project image */}
                 <div className="relative h-48 overflow-hidden">
@@ -47,6 +52,11 @@ const ProjectsSection = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                  {project.hasDetails && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="text-primary font-medium">Click to view details</span>
+                    </div>
+                  )}
                 </div>
                 
                 {/* Project content */}
@@ -54,7 +64,7 @@ const ProjectsSection = () => {
                   <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                  <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
                     {project.description}
                   </p>
                   
@@ -69,28 +79,18 @@ const ProjectsSection = () => {
                       </span>
                     ))}
                   </div>
-                  
-                  {/* Links */}
-                  <div className="flex items-center gap-3">
-                    <Button variant="ghost" size="sm" className="gap-2 hover:text-primary" asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4" />
-                        Live Demo
-                      </a>
-                    </Button>
-                    <Button variant="ghost" size="sm" className="gap-2 hover:text-primary" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4" />
-                        Code
-                      </a>
-                    </Button>
-                  </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
+
+      {/* Project Detail Modal */}
+      <ProjectDetailModal 
+        isOpen={selectedProject === "camera-security"} 
+        onClose={() => setSelectedProject(null)} 
+      />
     </section>
   );
 };
