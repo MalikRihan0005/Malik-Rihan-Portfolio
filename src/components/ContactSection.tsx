@@ -41,7 +41,17 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground">Email</div>
-                    <div className="font-medium">malikrihan@example.com</div>
+                    <div className="font-medium">malikrehandafedar911@gmail.com</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4 p-4 glass rounded-xl">
+                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-muted-foreground">Phone</div>
+                    <div className="font-medium">+91 9110604110</div>
                   </div>
                 </div>
                 
@@ -52,16 +62,6 @@ const ContactSection = () => {
                   <div>
                     <div className="text-sm text-muted-foreground">Location</div>
                     <div className="font-medium">Davangere, Karnataka</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4 p-4 glass rounded-xl">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground">Seeking</div>
-                    <div className="font-medium">Internship (Remote/Bangalore)</div>
                   </div>
                 </div>
               </div>

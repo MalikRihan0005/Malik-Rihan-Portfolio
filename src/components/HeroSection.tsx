@@ -33,12 +33,16 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-up opacity-0 animation-delay-600">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow transition-all duration-300 hover:scale-105">
-              View My Work
-            </Button>
-            <Button variant="outline" size="lg" className="border-border hover:bg-secondary transition-all duration-300">
-              Download Resume
-            </Button>
+            <a href="#projects">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow transition-all duration-300 hover:scale-105">
+                View My Work
+              </Button>
+            </a>
+            <a href="/Malik_Rihan_Resume.pdf" download>
+              <Button variant="outline" size="lg" className="border-border hover:bg-secondary transition-all duration-300">
+                Download Resume
+              </Button>
+            </a>
           </div>
           
           {/* Social links */}
@@ -60,7 +64,7 @@ const HeroSection = () => {
               <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a 
-              href="mailto:malikrihan@example.com"
+              href="mailto:malikrehandafedar911@gmail.com"
               className="p-3 glass rounded-xl hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group"
             >
               <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
