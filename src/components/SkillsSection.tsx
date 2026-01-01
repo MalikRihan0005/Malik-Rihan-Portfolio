@@ -1,16 +1,23 @@
 const skills = [
-  { name: "C Language", level: 85 },
-  { name: "Python", level: 80 },
-  { name: "C++", level: 75 },
-  { name: "Java", level: 70 },
+  { name: "C Language", level: 90 },
+  { name: "C++", level: 85 },
+  { name: "Python", level: 85 },
+  { name: "Java", level: 80 },
   { name: "JavaScript", level: 60 },
-  { name: "DSA", level: 65 },
+  { name: "Data Structures & Algorithms", level: 75 },
 ];
 
 const technologies = [
-  "C", "C++", "Python", "Java", "JavaScript", "HTML", "CSS",
-  "Data Structures", "Algorithms", "IoT", "Git", "GitHub",
-  "Web Development", "Machine Learning", "Cloud Computing", "DevOps"
+  "C", "C++", "Python", "Java", "JavaScript",
+  "Arduino", "ESP32", "PCB Design", "AutoCAD", "Digital Electronics",
+  "IoT", "Data Structures", "Algorithms", "OOP", "System Design",
+  "Git", "GitHub", "Machine Learning", "AI", "Cloud Computing", "DevOps"
+];
+
+const languages = [
+  { name: "English", level: "Fluent" },
+  { name: "Hindi", level: "Fluent" },
+  { name: "Kannada", level: "Fluent" },
 ];
 
 const SkillsSection = () => {
@@ -36,7 +43,7 @@ const SkillsSection = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Skill bars */}
             <div className="space-y-6">
-              <h3 className="text-xl font-semibold mb-6">Core Competencies</h3>
+              <h3 className="text-xl font-semibold mb-6">Programming Languages</h3>
               {skills.map((skill, index) => (
                 <div key={skill.name} className="space-y-2">
                   <div className="flex justify-between items-center">
@@ -54,11 +61,26 @@ const SkillsSection = () => {
                   </div>
                 </div>
               ))}
+              
+              {/* Languages */}
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold mb-4">Languages</h3>
+                <div className="flex flex-wrap gap-3">
+                  {languages.map((lang) => (
+                    <span 
+                      key={lang.name}
+                      className="px-4 py-2 glass rounded-xl text-sm font-medium"
+                    >
+                      {lang.name} <span className="text-primary">({lang.level})</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
             
             {/* Technology tags */}
             <div>
-              <h3 className="text-xl font-semibold mb-6">Tech Stack</h3>
+              <h3 className="text-xl font-semibold mb-6">Tech Stack & Tools</h3>
               <div className="flex flex-wrap gap-3">
                 {technologies.map((tech) => (
                   <span 
