@@ -18,31 +18,27 @@ const projectImages = [
 const ProjectDetailModal = ({ isOpen, onClose }: ProjectDetailModalProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-background border-border">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">
+          <DialogTitle className="text-2xl font-serif text-foreground">
             Camera-Based Security System for Women & Physically Challenged
           </DialogTitle>
         </DialogHeader>
         
         <div className="space-y-8">
-          {/* Project Description */}
-          <div className="text-muted-foreground">
-            <p>
-              An innovative IoT-based camera security system designed specifically for the safety and 
-              protection of women and physically challenged individuals. Features real-time monitoring, 
-              smart surveillance algorithms for threat detection, and automated alert systems.
-            </p>
-          </div>
+          <p className="text-muted-foreground leading-relaxed">
+            An innovative IoT-based camera security system designed specifically for the safety and 
+            protection of women and physically challenged individuals. Features real-time monitoring, 
+            smart surveillance algorithms for threat detection, and automated alert systems.
+          </p>
           
-          {/* Project Images Grid */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Project Gallery</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <h3 className="text-lg font-semibold mb-4 text-foreground">Project Gallery</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
               {projectImages.map((image, index) => (
                 <div 
                   key={index}
-                  className="aspect-video rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-all duration-300"
+                  className="aspect-video rounded-lg overflow-hidden border border-border hover:border-primary/30 transition-all duration-300"
                 >
                   <img 
                     src={image} 
@@ -54,11 +50,10 @@ const ProjectDetailModal = ({ isOpen, onClose }: ProjectDetailModalProps) => {
             </div>
           </div>
           
-          {/* Certification Section */}
           <div className="border-t border-border pt-8">
             <div className="flex items-center gap-2 mb-4">
-              <Award className="w-6 h-6 text-primary" />
-              <h3 className="text-lg font-semibold">Certification for the Project</h3>
+              <Award className="w-5 h-5 text-primary" />
+              <h3 className="text-lg font-semibold text-foreground">Certification for the Project</h3>
             </div>
             <div className="rounded-lg overflow-hidden border border-border">
               <img 
@@ -69,7 +64,7 @@ const ProjectDetailModal = ({ isOpen, onClose }: ProjectDetailModalProps) => {
             </div>
             <p className="text-sm text-muted-foreground mt-3">
               Certificate from Athreya Technologies Pvt Ltd for completing 640 hours internship 
-              in IoT field, working on Camera Based Security System for women and physically challenged people.
+              in IoT field, working on Camera Based Security System.
             </p>
           </div>
         </div>
