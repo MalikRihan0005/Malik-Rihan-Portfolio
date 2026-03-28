@@ -24,6 +24,7 @@ const education = [
 const certifications = [
   { title: "AI for Students: Build Your Own Generative AI Model", description: "Comprehensive AI/ML course with hands-on project implementation" },
   { title: "Machine Learning Model Deployment", description: "End-to-end ML deployment expertise using Flask and production practices" },
+  { title: "GEN AI : Acquiring Data", description: "Certificate in Generative AI data acquisition techniques and methodologies", link: "/images/cert-genai.pdf" },
 ];
 
 const ExperienceSection = () => {
@@ -77,12 +78,16 @@ const ExperienceSection = () => {
                     <Award className="w-5 h-5 text-primary" />
                     <h3 className="text-xl font-semibold text-foreground">Certifications</h3>
                   </div>
-                  {certifications.map((cert, index) => (
-                    <div key={index} className="rounded-xl p-4 mb-3 border border-border bg-card/40 hover:bg-accent/50 transition-all duration-300">
-                      <h4 className="font-medium mb-1 text-foreground">{cert.title}</h4>
-                      <p className="text-sm text-muted-foreground">{cert.description}</p>
-                    </div>
-                  ))}
+                  {certifications.map((cert, index) => {
+                    const Wrapper = cert.link ? 'a' : 'div';
+                    const linkProps = cert.link ? { href: cert.link, target: "_blank", rel: "noopener noreferrer" } : {};
+                    return (
+                      <Wrapper key={index} {...linkProps} className={`block rounded-xl p-4 mb-3 border border-border bg-card/40 hover:bg-accent/50 transition-all duration-300 ${cert.link ? 'cursor-pointer' : ''}`}>
+                        <h4 className="font-medium mb-1 text-foreground">{cert.title}</h4>
+                        <p className="text-sm text-muted-foreground">{cert.description}</p>
+                      </Wrapper>
+                    );
+                  })}
                 </div>
               </ScrollAnimate>
             </div>
