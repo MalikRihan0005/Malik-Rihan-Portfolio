@@ -25,6 +25,7 @@ const certifications = [
   { title: "AI for Students: Build Your Own Generative AI Model", description: "Comprehensive AI/ML course with hands-on project implementation" },
   { title: "Machine Learning Model Deployment", description: "End-to-end ML deployment expertise using Flask and production practices" },
   { title: "GEN AI : Acquiring Data", description: "Certificate in Generative AI data acquisition techniques and methodologies", link: "/images/cert-genai.pdf" },
+  { title: "MongoDB", description: "MongoDB skills certification covering database fundamentals and operations", link: "/images/cert-mongodb.pdf" },
 ];
 
 const ExperienceSection = () => {
