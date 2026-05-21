@@ -5,15 +5,14 @@ const skills = [
   { name: "C++", level: 85 },
   { name: "Python", level: 85 },
   { name: "Java", level: 80 },
-  { name: "JavaScript", level: 60 },
-  { name: "Data Structures & Algorithms", level: 75 },
 ];
 
 const technologies = [
-  "C", "C++", "Python", "Java", "JavaScript",
+  "C", "C++", "Python", "Java",
   "Arduino", "ESP32", "PCB Design", "AutoCAD", "Digital Electronics",
-  "IoT", "Data Structures", "Algorithms", "OOP", "System Design",
-  "Git", "GitHub", "Machine Learning", "AI", "Cloud Computing", "DevOps"
+  "IoT", "OOP", "System Design",
+  "Operating System", "Database Management System",
+  "Git", "GitHub", "AI"
 ];
 
 const languages = [
