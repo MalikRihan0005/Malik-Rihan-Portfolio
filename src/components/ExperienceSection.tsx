@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Briefcase, GraduationCap, Award, FileText } from "lucide-react";
 import ScrollAnimate from "./ScrollAnimate";
 
 const experience = [
