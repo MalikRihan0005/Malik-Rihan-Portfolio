@@ -22,12 +22,12 @@ const education = [
 ];
 
 const certifications = [
-  { title: "Anthropic", subtitle: "Certificate of Completion: Claude Code 101", description: "Foundational training on using Claude Code for AI-assisted software development", link: "/images/cert-claude-101.pdf" },
-  { title: "Anthropic", subtitle: "Claude Code in Action", description: "Advanced hands-on training applying Claude Code to real-world engineering workflows", link: "/images/cert-claude-in-action.pdf" },
-  { title: "AI for Students: Build Your Own Generative AI Model", description: "Comprehensive AI/ML course with hands-on project implementation" },
-  { title: "Machine Learning Model Deployment", description: "End-to-end ML deployment expertise using Flask and production practices" },
-  { title: "GEN AI : Acquiring Data", description: "Certificate in Generative AI data acquisition techniques and methodologies", link: "/images/cert-genai.pdf" },
-  { title: "MongoDB", description: "MongoDB skills certification covering database fundamentals and operations", link: "/images/cert-mongodb.pdf" },
+  { title: "Anthropic", subtitle: "Certificate of Completion: Claude Code 101", description: "Foundational training on using Claude Code for AI-assisted software development", link: "/images/cert-claude-101.pdf", company: "Anthropic" },
+  { title: "Anthropic", subtitle: "Claude Code in Action", description: "Advanced hands-on training applying Claude Code to real-world engineering workflows", link: "/images/cert-claude-in-action.pdf", company: "Anthropic" },
+  { title: "AI for Students: Build Your Own Generative AI Model", description: "Comprehensive AI/ML course with hands-on project implementation", company: "SkillUp India" },
+  { title: "Machine Learning Model Deployment", description: "End-to-end ML deployment expertise using Flask and production practices", company: "Great Learning" },
+  { title: "GEN AI : Acquiring Data", description: "Certificate in Generative AI data acquisition techniques and methodologies", link: "/images/cert-genai.pdf", company: "NASSCOM" },
+  { title: "MongoDB", description: "MongoDB skills certification covering database fundamentals and operations", link: "/images/cert-mongodb.pdf", company: "MongoDB" },
 ];
 
 const ExperienceSection = () => {
