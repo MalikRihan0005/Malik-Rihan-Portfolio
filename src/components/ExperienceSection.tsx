@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Briefcase, GraduationCap, Award, FileText } from "lucide-react";
 import ScrollAnimate from "./ScrollAnimate";
 
 const experience = [
@@ -81,17 +81,33 @@ const ExperienceSection = () => {
                     <Award className="w-5 h-5 text-primary" />
                     <h3 className="text-xl font-semibold text-foreground">Certifications</h3>
                   </div>
-                  {certifications.map((cert, index) => {
-                    const Wrapper = cert.link ? 'a' : 'div';
-                    const linkProps = cert.link ? { href: cert.link, target: "_blank", rel: "noopener noreferrer" } : {};
-                    return (
-                      <Wrapper key={index} {...linkProps} className={`block rounded-xl p-4 mb-3 border border-border bg-card/40 hover:bg-accent/50 transition-all duration-300 ${cert.link ? 'cursor-pointer' : ''}`}>
-                        <h4 className="font-medium mb-1 text-foreground">{cert.title}</h4>
-                        {cert.subtitle && <p className="text-sm font-medium text-primary mb-1">{cert.subtitle}</p>}
-                        <p className="text-sm text-muted-foreground">{cert.description}</p>
-                      </Wrapper>
-                    );
-                  })}
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {certifications.map((cert, index) => {
+                      const pdfName = cert.link ? cert.link.split('/').pop() : null;
+                      const Wrapper = cert.link ? 'a' : 'div';
+                      const linkProps = cert.link ? { href: cert.link, target: "_blank", rel: "noopener noreferrer" } : {};
+                      return (
+                        <Wrapper key={index} {...linkProps} className={`group relative rounded-xl border border-border bg-card/40 hover:bg-accent/50 transition-all duration-300 overflow-hidden ${cert.link ? 'cursor-pointer' : ''}`}>
+                          <div className="p-4 flex flex-col items-center text-center h-full">
+                            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
+                              <FileText className="w-5 h-5 text-primary" />
+                            </div>
+                            <h4 className="font-medium text-xs text-foreground leading-tight mb-1">{cert.title}</h4>
+                            {cert.subtitle && <p className="text-[11px] font-medium text-primary leading-tight">{cert.subtitle}</p>}
+                            <p className="text-[10px] text-muted-foreground mt-1 line-clamp-2">{cert.description}</p>
+                          </div>
+                          {pdfName && (
+                            <div className="absolute inset-0 bg-foreground/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                              <div className="text-center px-3">
+                                <p className="text-[10px] text-muted-foreground mb-1">PDF</p>
+                                <p className="text-xs font-medium text-primary-foreground break-all">{pdfName}</p>
+                              </div>
+                            </div>
+                          )}
+                        </Wrapper>
+                      );
+                    })}
+                  </div>
                 </div>
               </ScrollAnimate>
             </div>
