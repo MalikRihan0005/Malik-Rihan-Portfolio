@@ -22,6 +22,8 @@ const education = [
 ];
 
 const certifications = [
+  { title: "Anthropic", subtitle: "Certificate of Completion: Claude Code 101", description: "Foundational training on using Claude Code for AI-assisted software development", link: "/images/cert-claude-101.pdf" },
+  { title: "Anthropic", subtitle: "Claude Code in Action", description: "Advanced hands-on training applying Claude Code to real-world engineering workflows", link: "/images/cert-claude-in-action.pdf" },
   { title: "AI for Students: Build Your Own Generative AI Model", description: "Comprehensive AI/ML course with hands-on project implementation" },
   { title: "Machine Learning Model Deployment", description: "End-to-end ML deployment expertise using Flask and production practices" },
   { title: "GEN AI : Acquiring Data", description: "Certificate in Generative AI data acquisition techniques and methodologies", link: "/images/cert-genai.pdf" },
@@ -85,6 +87,7 @@ const ExperienceSection = () => {
                     return (
                       <Wrapper key={index} {...linkProps} className={`block rounded-xl p-4 mb-3 border border-border bg-card/40 hover:bg-accent/50 transition-all duration-300 ${cert.link ? 'cursor-pointer' : ''}`}>
                         <h4 className="font-medium mb-1 text-foreground">{cert.title}</h4>
+                        {cert.subtitle && <p className="text-sm font-medium text-primary mb-1">{cert.subtitle}</p>}
                         <p className="text-sm text-muted-foreground">{cert.description}</p>
                       </Wrapper>
                     );
