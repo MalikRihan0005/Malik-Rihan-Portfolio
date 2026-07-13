@@ -89,11 +89,9 @@ const ExperienceSection = () => {
                       return (
                         <Wrapper key={index} {...linkProps} className={`group relative rounded-xl border border-border bg-card/40 hover:bg-accent/50 transition-all duration-300 overflow-hidden ${cert.link ? 'cursor-pointer' : ''}`}>
                           <div className="p-4 flex flex-col items-center text-center h-full">
-                            <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
-                              {cert.company ? (
-                                <span className="text-[8px] font-bold text-primary text-center leading-tight px-0.5 block line-clamp-2">
-                                  {cert.company}
-                                </span>
+                            <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors overflow-hidden">
+                              {cert.logo ? (
+                                <img src={cert.logo} alt={`${cert.company} logo`} className="w-7 h-7 object-contain" loading="lazy" />
                               ) : (
                                 <FileText className="w-5 h-5 text-primary" />
                               )}
