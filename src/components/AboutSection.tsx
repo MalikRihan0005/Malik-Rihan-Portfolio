@@ -21,7 +21,7 @@ const AboutSection = () => {
                 <span className="text-primary italic">real-world problems</span>
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-                I'm a second-year Information Science Engineering student at BIET Davangere, 
+                I'm a Third-year Information Science Engineering student at BIET Davangere, 
                 passionate about building web apps, learning data structures, and exploring Python-based technologies.
               </p>
             </div>
