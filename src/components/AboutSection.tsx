@@ -44,7 +44,7 @@ const AboutSection = () => {
           <ScrollAnimate delay={0.2}>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 p-8 rounded-2xl border border-border bg-card/40">
               <div className="text-center">
-                <div className="text-3xl font-serif text-primary mb-1">2nd</div>
+                <div className="text-3xl font-serif text-primary mb-1">3rd</div>
                 <div className="text-muted-foreground text-sm">Year ISE Student</div>
               </div>
               <div className="text-center">
