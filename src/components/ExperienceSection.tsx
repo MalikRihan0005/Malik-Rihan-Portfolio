@@ -28,6 +28,7 @@ const certifications = [
   { title: "Machine Learning Model Deployment", description: "End-to-end ML deployment expertise using Flask and production practices", company: "Great Learning" },
   { title: "GEN AI : Acquiring Data", description: "Certificate in Generative AI data acquisition techniques and methodologies", link: "/images/cert-genai.pdf", company: "NASSCOM" },
   { title: "MongoDB", description: "MongoDB skills certification covering database fundamentals and operations", link: "/images/cert-mongodb.pdf", company: "MongoDB", logo: "https://cdn.simpleicons.org/mongodb" },
+  { title: "NVIDIA", subtitle: "Getting Started with AI on Jetson Nano", description: "Hands-on training on deep learning inference and edge AI development using the NVIDIA Jetson Nano platform", link: "/images/cert-nvidia.pdf", company: "NVIDIA", logo: "https://cdn.simpleicons.org/nvidia" },
 ];
 
 const ExperienceSection = () => {

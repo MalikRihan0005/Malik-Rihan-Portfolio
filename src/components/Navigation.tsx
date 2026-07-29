@@ -45,7 +45,7 @@ const Navigation = () => {
             ))}
             <a href="mailto:malikrehandafedar911@gmail.com">
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 text-sm">
-                Hire Me
+                Connect
               </Button>
             </a>
           </div>
@@ -73,7 +73,7 @@ const Navigation = () => {
               ))}
               <a href="mailto:malikrehandafedar911@gmail.com">
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full mt-2 rounded-full">
-                  Hire Me
+                  Connect
                 </Button>
               </a>
             </div>
