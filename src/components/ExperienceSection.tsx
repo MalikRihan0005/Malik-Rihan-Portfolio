@@ -22,13 +22,13 @@ const education = [
 ];
 
 const certifications = [
+  { title: "NVIDIA", subtitle: "Getting Started with AI on Jetson Nano", description: "Hands-on training on deep learning inference and edge AI development using the NVIDIA Jetson Nano platform", link: "/images/cert-nvidia.pdf", company: "NVIDIA", logo: "https://cdn.simpleicons.org/nvidia" },
   { title: "Anthropic", subtitle: "Certificate of Completion: Claude Code 101", description: "Foundational training on using Claude Code for AI-assisted software development", link: "/images/cert-claude-101.pdf", company: "Anthropic", logo: "https://cdn.simpleicons.org/anthropic" },
   { title: "Anthropic", subtitle: "Claude Code in Action", description: "Advanced hands-on training applying Claude Code to real-world engineering workflows", link: "/images/cert-claude-in-action.pdf", company: "Anthropic", logo: "https://cdn.simpleicons.org/anthropic" },
   { title: "AI for Students: Build Your Own Generative AI Model", description: "Comprehensive AI/ML course with hands-on project implementation", company: "SkillUp India" },
   { title: "Machine Learning Model Deployment", description: "End-to-end ML deployment expertise using Flask and production practices", company: "Great Learning" },
   { title: "GEN AI : Acquiring Data", description: "Certificate in Generative AI data acquisition techniques and methodologies", link: "/images/cert-genai.pdf", company: "NASSCOM" },
   { title: "MongoDB", description: "MongoDB skills certification covering database fundamentals and operations", link: "/images/cert-mongodb.pdf", company: "MongoDB", logo: "https://cdn.simpleicons.org/mongodb" },
-  { title: "NVIDIA", subtitle: "Getting Started with AI on Jetson Nano", description: "Hands-on training on deep learning inference and edge AI development using the NVIDIA Jetson Nano platform", link: "/images/cert-nvidia.pdf", company: "NVIDIA", logo: "https://cdn.simpleicons.org/nvidia" },
 ];
 
 const ExperienceSection = () => {
