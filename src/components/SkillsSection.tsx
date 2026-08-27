@@ -1,25 +1,28 @@
 import ScrollAnimate from "./ScrollAnimate";
 
 const skills = [
+  { name: "Java", level: 85 },
+  { name: "Python", level: 85 },
   { name: "C Language", level: 90 },
   { name: "C++", level: 85 },
-  { name: "Python", level: 85 },
-  { name: "Java", level: 80 },
+  { name: "SQL", level: 80 },
 ];
 
 const technologies = [
-  "C", "C++", "Python", "Java",
-  "Arduino", "ESP32", "PCB Design", "AutoCAD", "Digital Electronics",
-  "IoT", "OOP", "System Design",
-  "Operating System", "Database Management System",
-  "Git", "GitHub", "AI"
+  "Data Structures & Algorithms", "Object-Oriented Programming", "Full Stack", "System Design", "Machine Learning",
+  "AWS (Lambda, DynamoDB, API Gateway)", "CI/CD Pipelines", "Infrastructure-as-Code", "Docker", "Kubernetes",
+  "MongoDB Atlas", "Supabase (PostgreSQL)",
+  "Prompt Engineering", "Git", "GitHub", "VS Code", "Vercel", "Claude", "OpenAI",
+  "Arduino", "PCB Design", "Digital Electronics", "AutoCAD", "Operating System", "Project Management"
 ];
 
 const languages = [
-  { name: "English", level: "Fluent" },
+  { name: "English", level: "Professional" },
   { name: "Hindi", level: "Fluent" },
   { name: "Kannada", level: "Fluent" },
+  { name: "Italian", level: "Beginner" },
 ];
+
 
 const SkillsSection = () => {
   return (

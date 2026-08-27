@@ -3,33 +3,45 @@ import ScrollAnimate from "./ScrollAnimate";
 
 const experience = [
   {
-    title: "Software Development Intern",
-    organization: "Athreya Technologies Private Limited",
-    location: "Hubballi, Karnataka",
+    title: "DevOps Engineer Intern",
+    organization: "ZeTheta Algorithms Pvt. Ltd.",
+    location: "Mumbai (Remote)",
+    period: "Aug 2026 – Present",
+    description: [
+      "Architect and deploy security-hardened AWS cloud infrastructure for BFSI clients, applying compliance-aligned configurations for high-stakes financial systems",
+      "Implement CI/CD pipelines and infrastructure-as-code (IaC) to automate deployments, reducing manual intervention and accelerating release cycles",
+      "Collaborate in an agile team to design scalable, fault-tolerant distributed systems meeting enterprise reliability standards",
+    ],
+  },
+  {
+    title: "Internet Of Things Intern",
+    organization: "Athreya Technologies Pvt. Ltd.",
+    location: "Hubballi (on-site)",
     period: "Dec 2024 – Mar 2025",
     description: [
-      "Contributing to real-world software development projects using agile methodologies",
-      "Developing production-ready code using C, C++, Python, and Java",
-      "Collaborating with cross-functional teams to deliver high-quality code",
-      "Gaining hands-on experience with version control and modern engineering practices",
+      "Developed and optimized software modules in C, C++, Python, and Java within an agile environment, contributing to production-grade codebases",
+      "Participated in structured code reviews to enforce coding standards; utilized Git for collaborative version-controlled development across team branches",
+      "Integrated IoT hardware components with software layers to enable real-time embedded data communication",
     ],
   },
 ];
 
 const education = [
-  { degree: "Bachelor of Engineering in Information Science Engineering", institution: "Bapuji Institute of Engineering & Technology (BIET)", location: "Davangere, Karnataka", period: "Aug 2025 – Jul 2028" },
-  { degree: "Diploma in Electronics and Communications Engineering", institution: "JSS K.H.K Institute of Engineering", location: "Dharwad, Karnataka", period: "Aug 2022 – Apr 2025" },
+  { degree: "Bachelor of Engineering in Information Science Engineering", institution: "Bapuji Institute of Engineering & Technology (BIET)", location: "Davangere, Karnataka • CGPA: 7.6 / 10.0", period: "Aug 2025 – Jul 2028" },
+  { degree: "Diploma in Electronics and Communications Engineering", institution: "JSS KH Kabbur Institute of Engineering", location: "Dharwad, Karnataka", period: "Aug 2022 – Apr 2025" },
 ];
 
 const certifications = [
   { title: "NVIDIA", subtitle: "Getting Started with AI on Jetson Nano", description: "Hands-on training on deep learning inference and edge AI development using the NVIDIA Jetson Nano platform", link: "/images/cert-nvidia.pdf", company: "NVIDIA", logo: "https://cdn.simpleicons.org/nvidia" },
+  { title: "IIT Delhi", subtitle: "Artificial Intelligence", description: "Structured programme covering AI foundations, machine learning techniques and applied problem solving", company: "IIT Delhi" },
   { title: "Anthropic", subtitle: "Certificate of Completion: Claude Code 101", description: "Foundational training on using Claude Code for AI-assisted software development", link: "/images/cert-claude-101.pdf", company: "Anthropic", logo: "https://cdn.simpleicons.org/anthropic" },
   { title: "Anthropic", subtitle: "Claude Code in Action", description: "Advanced hands-on training applying Claude Code to real-world engineering workflows", link: "/images/cert-claude-in-action.pdf", company: "Anthropic", logo: "https://cdn.simpleicons.org/anthropic" },
-  { title: "AI for Students: Build Your Own Generative AI Model", description: "Comprehensive AI/ML course with hands-on project implementation", company: "SkillUp India" },
-  { title: "Machine Learning Model Deployment", description: "End-to-end ML deployment expertise using Flask and production practices", company: "Great Learning" },
-  { title: "GEN AI : Acquiring Data", description: "Certificate in Generative AI data acquisition techniques and methodologies", link: "/images/cert-genai.pdf", company: "NASSCOM" },
-  { title: "MongoDB", description: "MongoDB skills certification covering database fundamentals and operations", link: "/images/cert-mongodb.pdf", company: "MongoDB", logo: "https://cdn.simpleicons.org/mongodb" },
+  { title: "MongoDB University", subtitle: "Relational Model (SQL) to MongoDB", description: "Data modelling certification covering the move from relational schemas to document databases", link: "/images/cert-mongodb.pdf", company: "MongoDB", logo: "https://cdn.simpleicons.org/mongodb" },
+  { title: "NxtWave", subtitle: "AI for Students: Build Your Own Generative AI Model", description: "Comprehensive AI/ML course with hands-on generative model implementation", company: "NxtWave" },
+  { title: "NxtWave", subtitle: "ML Model Deployment using Flask", description: "End-to-end ML deployment expertise using Flask and production practices", company: "NxtWave" },
+  { title: "NASSCOM", subtitle: "GEN AI: Acquiring Data", description: "Certificate in Generative AI data acquisition techniques and methodologies", link: "/images/cert-genai.pdf", company: "NASSCOM" },
 ];
+
 
 const ExperienceSection = () => {
   return (
