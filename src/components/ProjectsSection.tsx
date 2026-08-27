@@ -5,13 +5,38 @@ import ScrollAnimate from "./ScrollAnimate";
 const projects = [
   {
     id: "camera-security",
-    title: "IoT-Based Camera Security System",
-    description: "Engineered an innovative camera-based security system for women and physically challenged individuals, integrating IoT sensors with real-time monitoring, smart surveillance algorithms for threat detection, and automated alert systems.",
-    tags: ["IoT", "Arduino", "ESP32-CAM", "Python", "Sensors", "PCB Design"],
+    title: "IoT Camera Security System",
+    description: "Engineered a smart surveillance system using IoT motion sensors and computer vision; automated real-time alerts delivered to a mobile UI, reducing manual monitoring overhead.",
+    tags: ["Python", "Arduino", "IoT Sensors", "ESP32-CAM", "PCB Design"],
     image: "/images/project-1.jpg",
     hasDetails: true,
   },
+  {
+    id: "novapay",
+    title: "NovaPay Digital Bank – Zero-Downtime CI/CD Pipeline",
+    description: "Architected a production-grade 8-stage CI/CD pipeline for a fictional RBI-licensed bank, cutting commit-to-production time from a fortnightly manual cycle to under 2 hours. Implemented blue-green and canary deployments with automated rollback triggers on Kubernetes, targeting 99.999% availability.",
+    tags: ["GitHub Actions", "Docker", "SonarQube", "OPA", "Kubernetes"],
+    image: "/images/project-novapay.jpg",
+    hasDetails: false,
+  },
+  {
+    id: "mealmart",
+    title: "MealMart – Smart Tiffin Subscription System",
+    description: "Built a full-stack meal subscription platform with real-time order management, user authentication, and dynamic menu control using React hooks and Supabase Realtime APIs. Deployed on Vercel with a cloud PostgreSQL backend and role-based access for admin and subscriber flows.",
+    tags: ["React.js", "Supabase", "Vercel", "PostgreSQL"],
+    image: "/images/project-mealmart.jpg",
+    hasDetails: false,
+  },
+  {
+    id: "spendwise",
+    title: "SpendWise – Expense Tracker",
+    description: "Designed a MERN-stack finance app with JWT authentication, expense categorization, and interactive Recharts dashboards for spending analysis. Leveraged MongoDB Atlas for scalable cloud persistence with zero-cost deployment on Render and Vercel.",
+    tags: ["MongoDB Atlas", "Express.js", "React.js", "Node.js", "JWT", "Recharts"],
+    image: "/images/project-spendwise.jpg",
+    hasDetails: false,
+  },
 ];
+
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
